@@ -1,0 +1,57 @@
+# Spanish translations for 'unicodeAscii' package.
+# Copyright (C) 2021 Sukil Etxenike
+# This file is distributed under the same license as the 'unicodeAscii' package.
+# Sukil Etxenike <sukiletxe@yahoo.es>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'unicodeAscii' '1.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2021-07-07 09:08+0200\n"
+"PO-Revision-Date: 2021-07-06 22:22+0200\n"
+"Last-Translator: Sukil Etxenike <sukiletxe@yahoo.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:39
+
+msgid ""
+"Decodes the selected text to ASCII. If pressed twice it copies the result to "
+"the clipboard"
+msgstr ""
+"Decodifica el texto seleccionado a ASCII. Si se pulsa dos veces copia el resultado al portapapeles."
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:49
+msgid "No selection"
+msgstr "Sin selección"
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:51
+msgid ""
+"Decodes the text of the clipboard. If pressed twice, it copies the result."
+msgstr "Decodifica el texto del portapapeles. Si se pulsa dos veces, copia el resultado."
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:61
+msgid "No text in clipboard"
+msgstr "No hay texto en el portapapeles"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "Unicode ASCII"
+msgstr "Unicode ASCII"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"This addon tries to convert selected text to a meaningful ASCII "
+"representation."
+msgstr ""
+"Este complemento intenta convertir el texto seleccionado a una "
+"representación en ASCII que tenga sentido"
+
