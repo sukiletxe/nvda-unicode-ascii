@@ -4,7 +4,7 @@
 
 Este complemento intenta resolver el problema con caracteres matemáticos alfanuméricos que, entre otras cosas, ahora se usan con propósito decorativo porque se ven bien en las redes sociales, además de utilizarse con el uso en que fueron pensados. El complemento convierte los caracteres que se le pasan a una representación cercana en ASCII, así que también se puede utilizar para convertir cualquier otro símbolo. Desgraciadamente, los resultados no siempre son perfectos ni buenos porque a veces los caracteres decorativos se utilizan por similitud con el caracter que se quiere escribir, y no por su significado.
 
-Nota: Este complemento puede no transliterar japonés o chino (entre otros) correctamente, ya que la librería que utiliza no tiene ninguna forma para adivinar el idioma del texto.
+Nota: Este complemento puede no transliterar japonés o chino (entre otros) correctamente, ya que la librería que utiliza no tiene ninguna forma para adivinar el idioma del texto. Además, si no puede transliterar un caracter lo dejará sin tocar, por lo cual el resultado puede no ser siempre ASCII.
 
 ## Modo de uso
 
