@@ -31,7 +31,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     
     def decode(self, text):
         if text is not None:
-            decoded = unidecode(text, errors = 'strict')
+            decoded = unidecode(text, errors = 'preserve')
             return decoded
         else:
             return None
