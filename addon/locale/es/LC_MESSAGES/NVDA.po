@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'unicodeAscii' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-07-07 09:08+0200\n"
+"POT-Creation-Date: 2021-08-04 11:45+0200\n"
 "PO-Revision-Date: 2021-07-06 22:22+0200\n"
 "Last-Translator: Sukil Etxenike <sukiletxe@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -17,26 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: addon\globalPlugins\unicodeAscii\__init__.py:39
-
-msgid ""
-"Decodes the selected text to ASCII. If pressed twice it copies the result to "
-"the clipboard"
-msgstr ""
-"Decodifica el texto seleccionado a ASCII. Si se pulsa dos veces copia el resultado al portapapeles."
-
 #: addon\globalPlugins\unicodeAscii\__init__.py:49
-msgid "No selection"
-msgstr "Sin selección"
-
-#: addon\globalPlugins\unicodeAscii\__init__.py:51
 msgid ""
-"Decodes the text of the clipboard. If pressed twice, it copies the result."
-msgstr "Decodifica el texto del portapapeles. Si se pulsa dos veces, copia el resultado."
+"Decodes the selected text or clipboard (in that order of search) to ASCII. "
+"If pressed twice it copies the result to the clipboard"
+msgstr ""
+"Decodifica el texto seleccionado o el del portapapeles (en ese orden "
+"debúsqueda) a ASCII. Si se pulsa dos veces copia el resultado al "
+"portapapeles."
 
-#: addon\globalPlugins\unicodeAscii\__init__.py:61
-msgid "No text in clipboard"
-msgstr "No hay texto en el portapapeles"
+#: addon\globalPlugins\unicodeAscii\__init__.py:58
+#: addon\globalPlugins\unicodeAscii\__init__.py:67
+msgid "No text in clipboard nor in selection"
+msgstr "No hay texto en el portapapeles ni en la selección"
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:60
+msgid ""
+"Decodes the selection or the clipboard (in that order of search), and adds "
+"them to the default dictionary"
+msgstr ""
+"Decodifica la selección o el portapapeles y añade el resultado aldiccionario "
+"por defecto"
+
+#: addon\globalPlugins\unicodeAscii\__init__.py:65
+msgid "Decoded and added to default dictionary"
+msgstr "Decodificado y añadido al diccionario por defecto"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -55,3 +60,11 @@ msgstr ""
 "Este complemento intenta convertir el texto seleccionado a una "
 "representación en ASCII que tenga sentido"
 
+#~ msgid "No selection"
+#~ msgstr "Sin selección"
+
+#~ msgid ""
+#~ "Decodes the text of the clipboard. If pressed twice, it copies the result."
+#~ msgstr ""
+#~ "Decodifica el texto del portapapeles. Si se pulsa dos veces, copia el "
+#~ "resultado."
