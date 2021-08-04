@@ -8,8 +8,8 @@ Nota: Este complemento puede no transliterar japonés o chino (entre otros) corr
 
 ## Modo de uso
 
-* Pulsa NVDA+Ctrl+N para decodificar el texto seleccionado. Si lo pulsas dos veces el resultado se copiará al portapapeles.
-* Pulsa CTRL+Shift+NVDA+N para decodificar el texto del portapapeles. Si lo pulsas dos veces el resultado se copiará.
+* Pulsa NVDA+Ctrl+N para decodificar el texto del portapapeles o el texto seleccionado (en ese orden de búsqueda). Si lo pulsas dos veces el resultado se copiará al portapapeles.
+* Pulsa CTRL+Shift+NVDA+N para decodificar el texto del portapapeles o el texto seleccionado (en ese orden) y añadir el patrón y la sustitución al diccionario por defecto (útil para cadenas de texto que encuentres frecuentemente).
 
 Estos gestos se pueden cambiar en el diálogo de gestos de entrada, en la categoría unicodeAscii.
 
@@ -19,11 +19,15 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 ## Registro de cambios
 
-### 1.0.1
+### Versión 1.1
+
+* Añadida la posibilidad de añadir una cadena de texto y su decodificación al diccionario por defecto, cambiados atajos de teclado.
+
+### Versión 1.0.1
 
 * Ahora el texto que no se pueda convertir se mantendrá en lugar de reemplazarse por signos de interrogación.
 
-### 1.0
+### Versión 1.0
 
 * Versión inicial.
 
