@@ -13,6 +13,16 @@ Note: This addon may not transliterate Japanese and Chinese text (among others) 
 
 These shortcuts can be changed in the input gestures dialog, in the unicodeAscii category.
 
+## Changelog
+
+### 1.0.1
+
+* Now text which cannot be converted will be ignored instead of replaced by question marks.
+
+### 1.0
+
+* First version.
+
 ## Thanks
 
 * Jesús Pavón for the idea.
