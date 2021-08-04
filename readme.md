@@ -8,8 +8,8 @@ Note: This addon may not transliterate Japanese and Chinese text (among others) 
 
 ## Usage
 
-* Press NVDA+Ctrl+N to decode the selected text, press it twice to copy the result to the clipboard.
-* Press CTRL+Shift+NVDA+N to decode the text of the clipboard, press it twice to copy the result.
+* Press NVDA+Ctrl+N to decode the text of the clipboard or the selected text (in that order of searching), press it twice to copy the result to the clipboard.
+* Press CTRL+Shift+NVDA+N to decode the text of the clipboard or the selected text (in that order) and add them as pattern and replacement to the default dictionary (useful if you find a string of text frequently).
 
 These shortcuts can be changed in the input gestures dialog, in the unicodeAscii category.
 
@@ -19,11 +19,15 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ## Changelog
 
-### 1.0.1
+### Version 1.1
+
+* Added possibility to add a string and its decoded counterpart to the default dictionary, changed shortcuts.
+
+### Version 1.0.1
 
 * Now text which cannot be converted will be kept instead of replaced by question marks.
 
-### 1.0
+### Version 1.0
 
 * First version.
 
