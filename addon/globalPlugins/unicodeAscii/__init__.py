@@ -9,6 +9,7 @@ import api
 import ui
 import textInfos
 from scriptHandler import script, getLastScriptRepeatCount
+from speechDictHandler import dictionaries, SpeechDictEntry
 
 from .unidecode import unidecode
 import addonHandler
@@ -28,7 +29,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             return(None)
         else:
             return(info.text)
-    
+
+    def add_to_dict(self, pattern, replacement):
+        dictionaries['default'].append(SpeechDictEntry(pattern, replacement, ''))
+        dictionaries['default'].save()
+
     def decode(self, text):
         if text is not None:
             decoded = unidecode(text, errors = 'preserve')
@@ -36,26 +41,28 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         else:
             return None
     
-    @script(gesture = "kb:control+NVDA+n", description = _("Decodes the selected text to ASCII. If pressed twice it copies the result to the clipboard"))
-    def script_decode_selection(self, gesture):
-        selected = self.getSelection()
-        decoded = self.decode(selected)
+    def decode_selection_or_clipboard(self):
+        text = self.getSelection() or api.getClipData() # The joys of short circuiting.
+        decoded = self.decode(text)
+        return text, decoded            
+
+    @script(gesture = "kb:control+NVDA+n", description = _("Decodes the selected text or clipboard (in that order of search) to ASCII. If pressed twice it copies the result to the clipboard"))
+    def script_decode_selection_or_clipboard(self, gesture):
+        text, decoded = self.decode_selection_or_clipboard()
         if decoded is not None:
             if getLastScriptRepeatCount() == 0:
                 ui.message(decoded)
             else:
-                api.copyToClip(decoded, notify = True)
+                api.copyToClip(decoded, notify = True)    
         else:
-            ui.message (_("No selection"))
-    
-    @script(gesture = "kb:control+shift+NVDA+n", description = _("Decodes the text of the clipboard. If pressed twice, it copies the result."))
-    def script_decode_clipboard(self, gesture):
-        clipboard = api.getClipData()
-        decoded = self.decode(clipboard)
+            ui.message(_("No text in clipboard nor in selection"))
+
+    @script(gesture = "kb:control+shift+NVDA+n", description = _("Decodes the selection or the clipboard (in that order of search), and adds them to the default dictionary"))
+    def script_decode_and_add_to_dict(self, gesture):
+        text, decoded = self.decode_selection_or_clipboard()
         if decoded is not None:
-            if getLastScriptRepeatCount() == 0:
-                ui.message(decoded)
-            else:
-                api.copyToClip(decoded, notify = True)
+            self.add_to_dict(text, decoded)
+            ui.message(_("Decoded and added to default dictionary"))
         else:
-            ui.message(_("No text in clipboard"))
+            ui.message(_("No text in clipboard nor in selection"))
+            
