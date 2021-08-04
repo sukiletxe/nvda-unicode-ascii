@@ -21,7 +21,7 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ### 1.0.1
 
-* Now text which cannot be converted will be ignored instead of replaced by question marks.
+* Now text which cannot be converted will be kept instead of replaced by question marks.
 
 ### 1.0
 
