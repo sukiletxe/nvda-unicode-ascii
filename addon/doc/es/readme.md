@@ -13,7 +13,22 @@ Nota: Este complemento puede no transliterar japonés o chino (entre otros) corr
 
 Estos gestos se pueden cambiar en el diálogo de gestos de entrada, en la categoría unicodeAscii.
 
+## Qué hacer cuando la transliteración falla
+
+Puedes usar [el complemento información del caracter][charinfo] para obtener más información sobre un caracter, y si quieres, añadirlo al diálogo de pronunciación de puntuación y símbolos o al diccionario por defecto.
+
+## Registro de cambios
+
+### 1.0.1
+
+* Ahora el texto que no se pueda convertir se mantendrá en lugar de reemplazarse por signos de interrogación.
+
+### 1.0
+
+* Versión inicial.
+
 ## Agradecimientos
+
 
 * A Jesús Pavón por la idea.
 * Javi Domínguez por [FEN Reader][FEN]. La mayoría del código de este complemento está basado en el suyo.
@@ -23,3 +38,4 @@ Estos gestos se pueden cambiar en el diálogo de gestos de entrada, en la catego
 [FEN]: https://github.com/javidominguez/FenReader/
 [Unidecode]: https://github.com/avian2/unidecode
 [Nikola]: https://getnikola.com/avian2/unidecode
+[charinfo]: https://addons.nvda-project.org/addons/charInfo.es.html
