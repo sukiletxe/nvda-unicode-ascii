@@ -13,6 +13,10 @@ Note: This addon may not transliterate Japanese and Chinese text (among others) 
 
 These shortcuts can be changed in the input gestures dialog, in the unicodeAscii category.
 
+## What to do when transliteration fails
+
+You can use [the Character information add-on][charinfo] to retrieve more information about a character, and possibly add it to the punctuation and symbols dialog or your NVDA dictionary.
+
 ## Changelog
 
 ### 1.0.1
@@ -33,3 +37,4 @@ These shortcuts can be changed in the input gestures dialog, in the unicodeAscii
 [FEN]: https://github.com/javidominguez/FenReader/
 [Unidecode]: https://github.com/avian2/unidecode
 [Nikola]: https://getnikola.com/avian2/unidecode
+[charinfo]: https://addons.nvda-project.org/addons/charInfo.en.html
