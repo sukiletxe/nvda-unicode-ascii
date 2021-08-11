@@ -52,7 +52,6 @@ addon_info = {
 # https://scons.org/doc/production/HTML/scons-user/apd.html
 pythonSources = [
     "addon/globalPlugins/unicodeAscii/*.py",
-    "addon/globalPlugins/unicodeAscii/unidecode//*.py",
 ]
 
 # Files that contain strings for translation. Usually your python sources
