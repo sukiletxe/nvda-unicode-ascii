@@ -19,6 +19,10 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 ## Registro de cambios
 
+### Versión 1.1.1
+
+* Ahora se verbalizará un error cuando no haya texto que decodificar.
+
 ### Versión 1.1
 
 * Añadida la posibilidad de añadir una cadena de texto y su decodificación al diccionario por defecto, cambiados atajos de teclado.

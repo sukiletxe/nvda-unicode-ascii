@@ -19,6 +19,10 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ## Changelog
 
+### Version 1.1.1
+
+* Now an error will be reported when there is no text to decode.
+
 ### Version 1.1
 
 * Added possibility to add a string and its decoded counterpart to the default dictionary, changed shortcuts.
