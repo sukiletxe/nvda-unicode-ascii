@@ -42,9 +42,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             return None
     
     def decode_selection_or_clipboard(self):
-        text = self.getSelection() or api.getClipData() # The joys of short circuiting.
-        decoded = self.decode(text)
-        return text, decoded            
+        try:
+            text = self.getSelection() or api.getClipData() # The joys of short circuiting.
+            decoded = self.decode(text)
+            return text, decoded            
+        except:
+            return None, None
 
     @script(gesture = "kb:control+NVDA+n", description = _("Decodes the selected text or clipboard (in that order of search) to ASCII. If pressed twice it copies the result to the clipboard"))
     def script_decode_selection_or_clipboard(self, gesture):
