@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'unicodeAscii' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-08-17 11:50+0200\n"
-"PO-Revision-Date: 2021-08-17 12:03+0200\n"
+"POT-Creation-Date: 2021-08-17 12:57+0200\n"
+"PO-Revision-Date: 2021-08-17 12:57+0200\n"
 "Last-Translator: Sukil Etxenike <sukiletxe@yahoo.es>\n"
 "Language-Team: Spanish <sukiletxe@yahoo.es>\n"
 "Language: es\n"
@@ -18,11 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-Flags-xgettext: --add-comments\n"
 "X-Poedit-SearchPath-0: addon/globalPlugins/unicodeAscii/__init__.py\n"
 "X-Poedit-SearchPath-1: buildVars.py\n"
 
 #. Translators: A message  in input help or in the input gestures dialog.
-#: addon\globalPlugins\unicodeAscii\__init__.py:59
+#: addon/globalPlugins/unicodeAscii/__init__.py:59
 msgid ""
 "Decodes the selected text or clipboard (in that order of search) to ASCII. "
 "If pressed twice it copies the result to the clipboard"
@@ -32,13 +33,13 @@ msgstr ""
 "portapapeles."
 
 #. Translators: An error message.
-#: addon\globalPlugins\unicodeAscii\__init__.py:71
-#: addon\globalPlugins\unicodeAscii\__init__.py:90
+#: addon/globalPlugins/unicodeAscii/__init__.py:71
+#: addon/globalPlugins/unicodeAscii/__init__.py:90
 msgid "No text in clipboard nor in selection"
 msgstr "No hay texto en el portapapeles ni en la selección"
 
 #. Translators: A message  in input help or in the input gestures dialog.
-#: addon\globalPlugins\unicodeAscii\__init__.py:77
+#: addon/globalPlugins/unicodeAscii/__init__.py:77
 msgid ""
 "Decodes the selection or the clipboard (in that order of search), and adds "
 "them to the default dictionary"
@@ -47,7 +48,7 @@ msgstr ""
 "por defecto"
 
 #. Translators: A message indicating the success of the operation of decoding a string and adding it to the default dictionary.
-#: addon\globalPlugins\unicodeAscii\__init__.py:85
+#: addon/globalPlugins/unicodeAscii/__init__.py:85
 msgid "Decoded and added to default dictionary"
 msgstr "Decodificado y añadido al diccionario por defecto"
 
@@ -62,11 +63,13 @@ msgstr "Unicode ASCII"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid ""
-"This addon tries to convert selected text to a meaningful ASCII "
-"representation."
+"This addon tries to convert selected text or the text in the clipboard to a "
+"meaningful ASCII representation. It also allows to add the text and the "
+"conversion to the default dictionary"
 msgstr ""
 "Este complemento intenta convertir el texto seleccionado a una "
-"representación en ASCII que tenga sentido."
+"representación en ASCII que tenga sentido. También permite añadir ese texto "
+"y el resultado de la conversión al diccionario predeterminado"
 
 #~ msgid "No selection"
 #~ msgstr "Sin selección"
