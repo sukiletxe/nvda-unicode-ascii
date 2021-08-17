@@ -23,7 +23,7 @@ addon_info = {
 	"addon_summary": _("Unicode ASCII"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""This addon tries to convert selected text to a meaningful ASCII representation."""),
+	"addon_description": _("""This addon tries to convert selected text or the text in the clipboard to a meaningful ASCII representation. It also allows to add the text and the conversion to the default dictionary"""),
 	# version
 	"addon_version": "1.1.1",
 	# Author(s)
