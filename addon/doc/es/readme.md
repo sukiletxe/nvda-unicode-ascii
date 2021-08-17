@@ -39,7 +39,7 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 
 * A Jesús Pavón por la idea.
-* Javi Domínguez por [FEN Reader][FEN]. La mayoría del código de este complemento está basado en el suyo.
+* Javi Domínguez por [FEN Reader][FEN]. La mayoría del código de este complemento está basado en el suyo (el esqueleto y la función para obtener la selección).
 * Sean M. Burke por `Text::Unidecode` y Tomaž Šolc por [Unidecode].
 * [Nikola] por ser genial y utilizar Unidecode (ahí supe de su existencia).
 

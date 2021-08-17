@@ -38,7 +38,7 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 ## Thanks
 
 * Jesús Pavón for the idea.
-* Javi Domínguez for [FEN Reader][FEN]. Most of this add-on's code is based on it.
+* Javi Domínguez for [FEN Reader][FEN]. Most of this add-on's code is based on it (the skeleton of the add-on and the getSelection function).
 * Sean M. Burke for `Text::Unidecode` and Tomaž Šolc for [Unidecode].
 * [Nikola] for being great and using Unidecode (that's where I found it).
 
