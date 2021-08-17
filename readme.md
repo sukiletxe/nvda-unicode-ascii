@@ -19,6 +19,10 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ## Changelog
 
+### Version 1.1.2
+
+* Add notes for translations.
+
 ### Version 1.1.1
 
 * Now an error will be reported when there is no text to decode.
