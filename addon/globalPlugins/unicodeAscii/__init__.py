@@ -4,14 +4,18 @@
 # The structure of this file and the getSelection function are from FEN Reader by Javi Dominguez.
 # Copyright 2021 by Sukil Etxenike <sukiletxe@yahoo.es>
 
+import os
+import sys
+
 import globalPluginHandler
 import api
 import ui
 import textInfos
 from scriptHandler import script, getLastScriptRepeatCount
 from speechDictHandler import dictionaries, SpeechDictEntry
-
-from .unidecode import unidecode
+dirAddon=os.path.dirname(__file__)
+sys.path.append(dirAddon)
+from unidecode import unidecode
 import addonHandler
 addonHandler.initTranslation()
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):

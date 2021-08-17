@@ -111,7 +111,7 @@ def _get_repl_str(char):
         table = Cache[section]
     except KeyError:
         try:
-            mod = __import__('x%03x'%(section), globals(), locals(), ['data'], level = 1)
+            mod = __import__('unidecode.x%03x'%(section), globals(), locals(), ['data'])
         except ImportError:
             # No data on this character
             Cache[section] = None
