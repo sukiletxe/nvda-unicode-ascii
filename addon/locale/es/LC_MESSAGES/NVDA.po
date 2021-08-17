@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'unicodeAscii' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2021-08-17 12:57+0200\n"
-"PO-Revision-Date: 2021-08-17 12:57+0200\n"
+"PO-Revision-Date: 2021-08-17 14:27+0200\n"
 "Last-Translator: Sukil Etxenike <sukiletxe@yahoo.es>\n"
 "Language-Team: Spanish <sukiletxe@yahoo.es>\n"
 "Language: es\n"
@@ -29,8 +29,7 @@ msgid ""
 "If pressed twice it copies the result to the clipboard"
 msgstr ""
 "Decodifica el texto seleccionado o el del portapapeles (en ese orden "
-"debúsqueda) a ASCII. Si se pulsa dos veces copia el resultado al "
-"portapapeles."
+"debúsqueda) a ASCII. Si se pulsa dos veces copia el resultado al portapapeles"
 
 #. Translators: An error message.
 #: addon/globalPlugins/unicodeAscii/__init__.py:71
