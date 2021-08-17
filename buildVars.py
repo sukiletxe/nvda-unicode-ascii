@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""This addon tries to convert selected text or the text in the clipboard to a meaningful ASCII representation. It also allows to add the text and the conversion to the default dictionary"""),
 	# version
-	"addon_version": "1.1.1",
+	"addon_version": "1.1.2",
 	# Author(s)
 	"addon_author": "Sukil Etxenike <sukiletxe@yahoo.es>",
 	# URL for the add-on documentation support
