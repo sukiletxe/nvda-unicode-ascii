@@ -53,7 +53,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         except:
             return None, None
 
-    @script(gesture = "kb:control+NVDA+n", description = _("Decodes the selected text or clipboard (in that order of search) to ASCII. If pressed twice it copies the result to the clipboard"))
+    @script(
+        gesture = "kb:control+NVDA+n",
+        # Translators: A message  in input help or in the input gestures dialog.
+        description = _("Decodes the selected text or clipboard (in that order of search) to ASCII. If pressed twice it copies the result to the clipboard")
+    )
     def script_decode_selection_or_clipboard(self, gesture):
         text, decoded = self.decode_selection_or_clipboard()
         if decoded is not None:
@@ -62,14 +66,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             else:
                 api.copyToClip(decoded, notify = True)    
         else:
-            ui.message(_("No text in clipboard nor in selection"))
+            ui.message(
+                # Translators: An error message.
+                _("No text in clipboard nor in selection")
+            )
 
-    @script(gesture = "kb:control+shift+NVDA+n", description = _("Decodes the selection or the clipboard (in that order of search), and adds them to the default dictionary"))
+    @script(
+        gesture = "kb:control+shift+NVDA+n",
+        # Translators: A message  in input help or in the input gestures dialog.
+        description = _("Decodes the selection or the clipboard (in that order of search), and adds them to the default dictionary")
+        )
     def script_decode_and_add_to_dict(self, gesture):
         text, decoded = self.decode_selection_or_clipboard()
         if decoded is not None:
             self.add_to_dict(text, decoded)
-            ui.message(_("Decoded and added to default dictionary"))
+            ui.message(
+                # Translators: A message indicating the success of the operation of decoding a string and adding it to the default dictionary.
+                _("Decoded and added to default dictionary")
+            )
         else:
-            ui.message(_("No text in clipboard nor in selection"))
+            ui.message(
+                # Translators: An error message.
+                _("No text in clipboard nor in selection")
+            )
             
