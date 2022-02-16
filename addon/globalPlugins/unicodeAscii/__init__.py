@@ -17,6 +17,7 @@ dirAddon=os.path.dirname(__file__)
 sys.path.append(dirAddon)
 from unidecode import unidecode
 import addonHandler
+del sys.path[-1]
 addonHandler.initTranslation()
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     scriptCategory = "Unicode ASCII"
