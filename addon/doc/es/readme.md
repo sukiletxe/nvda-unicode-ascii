@@ -19,6 +19,10 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 ## Registro de cambios
 
+### Versión 1.1.3
+
+* Ahora la variable path se limpia una vez se termina de importar todo.
+
 ### Versión 1.1.2
 
 * Añadidas notas para traductores.

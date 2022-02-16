@@ -19,6 +19,10 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ## Changelog
 
+### Version 1.1.3
+
+* Cleaned addon path after importing everything.
+
 ### Version 1.1.2
 
 * Add notes for translations.
