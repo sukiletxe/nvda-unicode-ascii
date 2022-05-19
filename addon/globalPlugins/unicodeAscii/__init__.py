@@ -14,10 +14,10 @@ import textInfos
 from scriptHandler import script, getLastScriptRepeatCount
 from speechDictHandler import dictionaries, SpeechDictEntry
 dirAddon=os.path.dirname(__file__)
-sys.path.append(dirAddon)
+sys.path.append(os.path.abspath(dirAddon))
 from unidecode import unidecode
 import addonHandler
-del sys.path[-1]
+sys.path.remove(dirAddon)
 addonHandler.initTranslation()
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     scriptCategory = "Unicode ASCII"
