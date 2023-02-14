@@ -19,6 +19,10 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 ## Registro de cambios
 
+### Versión 1.3
+
+* Compatibilidad con NVDA 2023.x.
+
 ### Versión 1.2
 
 * Compatibilidad con NVDA 2022.x.
