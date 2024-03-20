@@ -19,6 +19,15 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 ## Changelog
 
+See [Unidecode's changelog][unich] for the library's changelog.
+
+### Version 1.4
+
+
+
+* Update Unidecode to 1.3.8.
+* Compatibility with NVDA 2024.x.
+
 ### Version 1.3
 
 * Compatibility with NVDA 2023.x.
@@ -62,3 +71,4 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 [Unidecode]: https://github.com/avian2/unidecode
 [Nikola]: https://getnikola.com/avian2/unidecode
 [charinfo]: https://addons.nvda-project.org/addons/charInfo.en.html
+[unich]: https://github.com/avian2/unidecode/blob/master/ChangeLog

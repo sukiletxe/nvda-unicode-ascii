@@ -19,6 +19,13 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 
 ## Registro de cambios
 
+Mira la [lista de cambios de Unidecode][unich] para ver los cambios de la librería.
+
+### Versión 1.4
+
+* Actualizado Unidecode a 1.3.8.
+* Compatibilidad con NVDA 2024.x.
+
 ### Versión 1.3
 
 * Compatibilidad con NVDA 2023.x.
@@ -63,3 +70,4 @@ Puedes usar [el complemento información del caracter][charinfo] para obtener m�
 [Unidecode]: https://github.com/avian2/unidecode
 [Nikola]: https://getnikola.com/avian2/unidecode
 [charinfo]: https://addons.nvda-project.org/addons/charInfo.es.html
+[unich]: https://github.com/avian2/unidecode/blob/master/ChangeLog
