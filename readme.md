@@ -21,6 +21,10 @@ You can use [the Character information add-on][charinfo] to retrieve more inform
 
 See [Unidecode's changelog][unich] for the library's changelog.
 
+### Version 1.5
+
+* Compatibility with NVDA 2025.x.
+
 ### Version 1.4
 
 
